@@ -1,0 +1,5 @@
+paho-mqtt
+openmeteo-requests
+requests-cache
+retry-requests
+boto3
