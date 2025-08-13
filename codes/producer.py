@@ -17,9 +17,9 @@ from retry_requests import retry
 
 # --- AWS IoT Core MQTT Setup ---
 device_id = "farm_data"
-cert_path = "certificate.pem.crt"
-key_path = "private.pem.key"
-ca_path = "AmazonRootCA1.pem"
+cert_path = "farm_certificates/certificate.pem.crt"
+key_path = "farm_certificates/private.pem.key"
+ca_path = "farm_certificates/AmazonRootCA1.pem"
 endpoint = "<YOUR END POINT ID>.amazonaws.com"
 port = 8883
 topic = "farm/data"
@@ -465,3 +465,4 @@ client.disconnect()
 print("🏁 Producer stopped.")
 
 '''
+
