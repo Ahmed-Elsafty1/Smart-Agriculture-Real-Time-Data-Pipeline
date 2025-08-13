@@ -15,8 +15,8 @@ This project addresses critical challenges in Egyptian agriculture including wat
 
 ```
 📡 IoT Sensors → 🔄 Data Producer → ☁️ AWS IoT Core → 🌊 Kinesis → ⚡ Lambda → 🗄️ S3 → 📊 Analytics
-                                                                     ↓
-                                                                     📢 SNS Alerts
+                                                                      ↓
+                                                                      📢 SNS Alerts
 ```
 
 ## 📊 Monitored Parameters
@@ -79,14 +79,14 @@ pip install boto3
    ```python
    # Update in final_producer.py
    endpoint = "your-iot-endpoint.iot.region.amazonaws.com"
-   cert_path = "farm_certe/certificate.pem.crt"
-   key_path = "farm_certe/private.pem.key"
-   ca_path = "farm_certe/AmazonRootCA1.pem"
+   cert_path = "certificate.pem.crt"
+   key_path = "private.pem.key"
+   ca_path = "AmazonRootCA1.pem"
    ```
 
 ### Running the Data Producer
 ```bash
-python final_producer.py
+python producer.py
 ```
 
 ### Deploying Lambda Function
@@ -177,7 +177,7 @@ aws lambda create-function \
 
 ```
 agriculture-pipeline/
-├── final_producer.py          # Main data producer
+├── producer.py          # Main data producer
 ├── lambda_function.py         # AWS Lambda processor
 ├── farm_certe/               # SSL certificates
 │   ├── certificate.pem.crt
@@ -186,6 +186,7 @@ agriculture-pipeline/
 ├── README.md                 # This file
 └── docs/                     # Documentation
     └── architecture.pdf      # System architecture
+    └── presentation.pdf      # System presentation
 ```
 
 ## 🎯 Business Impact
@@ -238,10 +239,6 @@ For technical support or questions:
 - Create an issue in this repository
 - Contact the development team
 - Review documentation in `/docs` folder
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
