@@ -177,16 +177,19 @@ aws lambda create-function \
 
 ```
 agriculture-pipeline/
-├── producer.py          # Main data producer
-├── lambda_function.py         # AWS Lambda processor
-├── farm_certe/               # SSL certificates
+├── codes/ 
+│   ├── producer.py          # Main data producer
+│   └── lambda_function.py         # AWS Lambda processor
+├── farm_certificates/               # SSL certificates
 │   ├── certificate.pem.crt
 │   ├── private.pem.key
 │   └── AmazonRootCA1.pem
 ├── README.md                 # This file
-└── docs/                     # Documentation
-    └── architecture.pdf      # System architecture
-    └── presentation.pdf      # System presentation
+├── docs/                     # Documentation
+│   ├── architecture.pdf      # System architecture
+│   ├── presentation.pdf      # System presentation
+└── dashboards/
+    └── dashboard.pdf 
 ```
 
 ## 🎯 Business Impact
