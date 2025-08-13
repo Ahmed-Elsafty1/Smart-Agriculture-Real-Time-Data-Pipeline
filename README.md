@@ -16,7 +16,7 @@ This project addresses critical challenges in Egyptian agriculture including wat
 ```
 📡 IoT Sensors → 🔄 Data Producer → ☁️ AWS IoT Core → 🌊 Kinesis → ⚡ Lambda → 🗄️ S3 → 📊 Analytics
                                                                       ↓
-                                                                      📢 SNS Alerts
+                                                                     📢 SNS Alerts
 ```
 
 ## 📊 Monitored Parameters
