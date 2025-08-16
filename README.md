@@ -186,10 +186,13 @@ agriculture-pipeline/
 │   └── AmazonRootCA1.pem
 ├── README.md                 # This file
 ├── docs/                     # Documentation
-│   ├── architecture.pdf      # System architecture
-│   ├── presentation.pdf      # System presentation
-└── dashboards/
-    └── dashboard.pdf 
+│   ├── architecture.png      # System architecture
+│   ├── presentation.png      # System presentation
+    └── dashboard.png
+    └── DWH_Tables.png
+    └── aws_setup.md
+
+
 ```
 
 ## 🎯 Business Impact
