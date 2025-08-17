@@ -189,7 +189,7 @@ agriculture-pipeline/
 │   ├── architecture.png      # System architecture
 │   ├── presentation.png      # System presentation
     └── dashboard.png
-    └── DWH_Tables.png
+    └── DWH
     └── aws_setup.md
 
 
