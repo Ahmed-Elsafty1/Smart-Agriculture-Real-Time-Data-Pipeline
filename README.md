@@ -188,9 +188,12 @@ agriculture-pipeline/
 ├── docs/                     # Documentation
 │   ├── architecture.png      # System architecture
 │   ├── presentation.png      # System presentation
-    └── dashboard.png
-    └── DWH
-    └── aws_setup.md
+│   ├── dashboard.png
+│   └── aws_setup.md
+├── DWH/
+    ├── Creating Tables.sql
+    ├── Transforming Tables.sql
+    └── DWH_Tables.png
 
 
 ```
